@@ -38,5 +38,5 @@ In JUnit 4, an exception was expected using the `@Test` annotation, while in JUn
 ## Answer 4
 
 In my opinion, the main advantages of the `assertThrows` method in comparison to the ` @Test(expected = ...)` annotation of JUnit 4 are twofold :
-1. `assertThrows` allows to manipulate the thrown exception, to print relevent information or to handle any specific logic;
+1. `assertThrows` allows to manipulate the thrown exception, to print relevant information or to handle any specific logic;
 2. `assertThrows` is type-safe, and as such, is safer to use to avoid runtime exceptions.
