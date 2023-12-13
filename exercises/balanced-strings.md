@@ -19,11 +19,11 @@ Use the coverage criteria studied in classes as follows:
 1. Use input space partitioning to design an initial set of inputs. Explain below the characteristics and partition blocks you identified.
 
 |characeteristic|block|block|block|
-|:---:|:---:|:---:|
-| number of parenthesis | even | odd |
+|:---:|:---:|:---:|:---|
+| number of parenthesis | even | odd ||
 | beginning character | "]"| "}" | ")"|
-| number of bracket | even | odd |
-| number of braces | even | odd |
+| number of bracket | even | odd ||
+| number of braces | even | odd ||
 
 
 3. Evaluate the statement coverage of the test cases designed in the previous step. If needed, add new test cases to increase the coverage. Describe below what you did in this step.
