@@ -12,19 +12,17 @@ public class StringUtils {
         for (char ch : str.toCharArray()) {
             if (ch == '{' || ch == '[' || ch == '(') {
                 stack.push(ch);
-            } else if (ch == '}' && !stack.isEmpty() && stack.peek() == '{') {
-                stack.pop();
-            } else if (ch == ']' && !stack.isEmpty() && stack.peek() == '[') {
-                stack.pop();
-            } else if (ch == ')' && !stack.isEmpty() && stack.peek() == '(') {
-                stack.pop();
-            } else {
-
+            } else if (!stack.isEmpty()) {
+                Character top = stack.peek();
+                if (ch == '}' && top == '{') {
+                    stack.pop();
+                } else if (ch == ']' && top == '[') {
+                    stack.pop();
+                } else if (ch == ')' && top == '(') {
+                    stack.pop();
+                }
             }
         }
-
         return stack.isEmpty();
     }
-
-
 }
