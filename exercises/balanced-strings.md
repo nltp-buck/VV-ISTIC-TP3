@@ -19,7 +19,7 @@ Use the coverage criteria studied in classes as follows:
 1. Use input space partitioning to design an initial set of inputs. Explain below the characteristics and partition blocks you identified.
 
 |characeteristic|block|block|block|
-|:---:|:---:|:---:|:---|
+|:---:|:---:|:---:|:---:|
 | number of parenthesis | even | odd ||
 | beginning character | "]"| "}" | ")"|
 | number of bracket | even | odd ||
